@@ -2,6 +2,36 @@ h1 {
     background-color: orange;
 }
 
-body {
+h1 {
     color: white;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+    border: 2px solid #000;
+    padding: 20px
+}
+
+.box {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 3em;
+    background-color: #f9f9f9;
+}
+
+.fixed {
+    width: 100px;
+    height: 100px;
+}
+
+.percent-width {
+    width: 50%;
+    height: 100px;
+}
+
+.vw-vh {
+    width: 50vw;
+    height: 50vh;
 }
