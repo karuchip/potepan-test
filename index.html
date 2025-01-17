@@ -47,6 +47,31 @@
             </div>
         </details>
     </div>
+
+    <!-- 擬似クラス -->
+    <div class="container">
+        <details>
+            <summary>CSSの擬似クラス</summary>
+            <h2>フォーム要素の状態</h2>
+            <!-- :checked -->
+             <label>
+                <input type="checkbox" class="checkbox-example">チェックボックス（チェックスタイルで変更）
+             </label>
+
+             <!-- :enableと:disabled -->
+              <input type="text" class="input-example" placeholder="有効な入力フィールド">
+              <input type="text" class="input-example" placeholder="無効な入力フィールド" disabled>
+
+              <!-- :invalidと:valid -->
+              <input type="email" class="email-example" placeholder="メールアドレスを入力（必須）" required>
+
+              <!-- ::beforeと::after -->
+               <div class="square">
+                   <p class="before-text"> ← beforeでテキストを追加しています</p>
+                   <p class="after-text">afterでテキストを追加しています → </p>
+               </div>
+        </details>
+    </div>
 </body>
 
 </html>
