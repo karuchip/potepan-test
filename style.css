@@ -104,7 +104,6 @@ h1 {
     text-align: center;
 }
 
-
 .grid-item11 {
     grid-area: areaA;
 
@@ -125,4 +124,52 @@ h1 {
 }
 .grid-item44 {
     grid-area: areaD;
+}
+
+
+/* 擬似クラス */
+/* チェックボックスがチェックされた場合のスタイル */
+.checkbox-example:checked {
+    outline: 4px solid orange;
+}
+
+/* 有効な入力フィールドのスタイル */
+.input-example:enabled {
+    background-color: lightgreen;
+}
+
+/* 無効な入力フィールドのスタイル */
+.input-example:disabled {
+    background-color: lightgray;
+}
+
+/* 無効なメールアドレスの入力フィールドのスタイル */
+.email-example:invalid {
+    border: 2px solid red;
+}
+
+/* 有効なメールアドレスの入力フィールドのスタイル */
+.email-example:valid {
+    border: 2px solid green;
+}
+
+/* ::beforeと::afterで目的の位置に要素を挿入 */
+.square {
+    margin: 20px auto;
+    width: 60vw;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.before-text::before {
+    color:red;
+    font-weight: bold;
+    content: "[::beforeで挿入!]"
+}
+
+.after-text::after {
+    color: blue;
+    font-weight: bold;
+    content: "[::afterで挿入]"
 }
