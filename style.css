@@ -173,3 +173,37 @@ h1 {
     font-weight: bold;
     content: "[::afterで挿入]"
 }
+
+/* cssアニメーション */
+/* Transition */
+.transition-box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    transition: all 1s ease 0.5s;
+    text-align: center;
+    line-height: 100px;
+}
+
+.transition-box:hover {
+    background-color:coral;
+}
+
+/* Animation */
+.animation-box {
+    width: 200px;
+    height: 100px;
+    background-color: lightpink;
+    text-align: center;
+    line-height: 100px;
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0%, 100% {
+        background-color: lightpink;
+    }
+    50% {
+        background-color: lightyellow;
+    }
+}
